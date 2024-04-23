@@ -202,8 +202,6 @@ ButtonPara.addEventListener("click", () => {
 //  IMG UML
 
 let img = "./frontend/assets/class-diagram.jpeg";
-
-
 let nuevoElemento1 = document.createElement("div");
 
 let UML = document.getElementById("UML");
