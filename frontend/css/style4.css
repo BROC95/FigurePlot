@@ -1,0 +1,156 @@
+:root {
+  --main-1-color: #16c1c8;
+  --main-2-color: #49cccc;
+  --main-3-color: #7cd7cf;
+  --main-4-color: #aee1d3;
+  --main-bg-color: ##e1ecd6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+/* Estilos para el botón */
+
+/* Estilos para el card y el contenedor */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* Establece las variables de color */
+
+/* Estilo para la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Estilo para las celdas de la tabla */
+table td,
+table th {
+  border: 1px solid var(--main-1-color);
+  padding: 8px;
+}
+
+/* Estilo para el encabezado de la tabla */
+table th {
+  background-color: var(--main-2-color);
+  color: white;
+}
+
+/* Estilo para la tarjeta */
+.card {
+  background-color: var(--main-3-color);
+  border: 1px solid var(--main-4-color);
+  padding: 16px;
+  border-radius: 8px;
+}
+/* Estilo para el fondo */
+body {
+  background-color: var(--main-bg-color);
+}
+/* Estilo para la barra de navegación */
+
+/* Estilo para el formulario */
+form {
+  background-color: var(--main-2-color);
+  padding: 16px;
+  border-radius: 8px;
+}
+/* Estilo para los botones */
+button {
+  background-color: var(--main-1-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: var(--main-1-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  width: 90px;
+}
+
+input[type="submit"] {
+  background-color: var(--main-3-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--main-4-color);
+}
+.navbar {
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+
+  max-width: 500px;
+}
+
+p {
+  /* padding: 100px; */
+  margin: 0 100px 10px 100px;
+  width: auto;
+}
+
+ul {
+  padding: 10px 10px 10px 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--main-4-color);
+  /* position: -webkit-sticky; Safari */
+  position: sticky;
+  top: 0;
+  border-radius: 20px;
+  /* padding-right: 600px; */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: var(--main-1-color);
+}
+footer{
+  background-color: #16c1c8;
+}
