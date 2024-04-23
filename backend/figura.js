@@ -143,7 +143,6 @@ class Triangulo extends figura {
     super.plotfig(xmax)  
     let hh = parseFloat(this.h)+1
     let x2 = (this.a**2-(hh-1)**2)**0.5+1
-    console.log(x2)
     this.layout.shapes.push(
       
         // Filled Triangle
@@ -320,9 +319,6 @@ class Trapecio extends figura {
     let hh = parseFloat(this.h)+1
     let dd = (this.B-this.b)/2+1
     let dD = this.b+dd
-    console.log(dd)
-    console.log(dD)
-    let color = 'rgba(100, 100, 96, 0.7)'
     this.layout.shapes.push(
       
         // Filled Circle
@@ -418,11 +414,6 @@ let g = [];
 
 let phiArr = this.makeInterval(0, 2*Math.PI, 50);
 let hArr = this.makeInterval(0, this.h, 50);
-let ones = Array(50).fill(1)
-console.log(ones)
-// let thetaArr = this.makeInterval(0, 2*Math.PI, 50); 
-//  x y z coord esfericas
-console.log(hArr)
 for (let i=0; i<hArr.length; i++){
   a.push(this.r * Math.cos(phiArr[i]));
   b.push(this.r * Math.sin(phiArr[i])); 
@@ -432,8 +423,6 @@ for (let i=0; i<hArr.length; i++){
   g.push(hArr[37]);
   f.push(this.h);
 }
-console.log(c)
-console.log(b)
 var data = [{
     opacity: 1,
     color: 'rgb(21,211,211)',
@@ -516,12 +505,8 @@ let p = [];
 let o = [];
 
 let phiArr = this.makeInterval(0, 2*Math.PI, 50);
-let hArr = this.makeInterval(0, this.h, 50);
-let ones = Array(50).fill(1)
-console.log(ones)
-// let thetaArr = this.makeInterval(0, 2*Math.PI, 50); 
-//  x y z coord esfericas
-console.log(hArr)
+let hArr = this.makeInterval(0, this.h, 50); 
+//  x y z coord cilindricas
 for (let i=0; i<hArr.length; i++){
   a.push(this.r * Math.cos(phiArr[i]));
   b.push(this.r * Math.sin(phiArr[i])); 
@@ -537,8 +522,6 @@ for (let i=0; i<hArr.length; i++){
   g.push(hArr[37]);
   f.push(this.h);
 }
-console.log(c)
-console.log(b)
 var data = [
 {  opacity: 0.4,
   color: 'rgb(21,11,211)',
