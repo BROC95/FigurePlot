@@ -211,7 +211,7 @@ console.log(directoryPath);
 if (directoryPath == "/" || directoryPath == "/FigurePlot/") {
   let img = "../assets/class-diagram.jpeg";
   nuevoElemento1.innerHTML = `<img src="${img}" id="imagen" alt=""></img>`;
-  question.appendChild(nuevoElemento1);
+  UML.appendChild(nuevoElemento1);
 } else {
   // img = "../assets/class-diagram.jpeg";
   img = "./frontend/assets/class-diagram.jpeg"
