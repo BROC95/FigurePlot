@@ -209,6 +209,7 @@ let nuevoElemento1 = document.createElement("div");
 let UML = document.getElementById("UML");
 console.log(directoryPath);
 if (directoryPath == "/" || directoryPath == "/FigurePlot/") {
+  let img = "../assets/class-diagram.jpeg";
   nuevoElemento1.innerHTML = `<img src="${img}" id="imagen" alt=""></img>`;
   question.appendChild(nuevoElemento1);
 } else {
